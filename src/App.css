@@ -1,0 +1,193 @@
+:root{
+  --mainBlue:#2a2a72;
+  --lightBlue:#009ffd;
+  --mainWhite:#f3f3f3;
+  --mainDark:#232528;
+  --mainYellow:#ffa400;
+}
+body{
+  font-family: "Oswald",sans-serif !important ;
+  background: var(--mainWhite) !important;
+  color: var(--mainDark) !important;
+}
+.navbar-brand{
+  width:4rem;
+}
+.text-title{
+  font-family: "Permanent Marker", cursive;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+}
+.text-blue{
+  color: var(--mainBlue);
+}
+.text-bright{
+  color: var(--lightBlue);
+}
+
+.nav-custom{
+  justify-content: space-between !important;
+  flex-wrap: wrap !important;
+}
+.nav-item-m-20{
+  display: block;
+    width: 20%;
+    flex: 0 0 20%;
+}
+.nav-item-m-80{
+  display: none;
+    width: 80%;
+    flex: 0 0 80%;
+    text-align:right;
+}
+.btn-primary {
+  display: inline-block;
+  text-decoration: none;
+  letter-spacing: 3px;
+  color: var(--mainYellow);
+  background: transparent!important;
+  padding: 0.4rem 0.9rem;
+  border: 3px solid var(--mainYellow)!important;
+  border-radius:0.5rem;
+  transition: all 0.3s linear;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.btn-primary:hover {
+  background-color: var(--mainDark)!important;
+  text-decoration: none;
+  color: var(--mainYellow)!important;
+}
+.defaultHero {
+  min-height: 60vh;
+  background: url("./images/hero.jpeg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* End of Hero */
+/* Banner */
+.banner {
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.5);
+  color: var(--mainWhite);
+  padding: 2rem 1rem;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 3px;
+}
+.banner h1 {
+  font-size: 2.5rem;
+}
+.banner div {
+  width: 10rem;
+  height: 5px;
+  background: var(--primaryColor);
+  margin: 1.7rem auto;
+}
+.banner p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+@media screen and (min-width: 576px) {
+  .banner {
+    padding: 2rem 3rem;
+  }
+  .banner h1 {
+    font-size: 3rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .banner {
+    padding: 2rem 6rem;
+  }
+  .banner h1 {
+    font-size: 4rem;
+  }
+}
+
+.nav-links {
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s linear;
+  list-style-type: none;
+}
+.nav-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+.nav-icon {
+  font-size: 1.5rem;
+  color: var(--primaryColor);
+}
+
+.nav-links a {
+  display: block;
+  text-decoration: none;
+  padding: 1rem 0;
+  transition:  all 0.3s linear;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+.nav-links a:hover {
+  color: var(--primaryColor);
+}
+
+.show-nav {
+  height: 220px;
+  position: relative;
+  margin-left: 0;
+  float: right;
+}
+@media screen and (min-width: 768px) {
+
+  .nav-btn {
+    display: none;
+  }
+  .nav-links {
+    align-items: center;
+    height: auto;
+    display: flex;
+    margin-left: 4rem;
+  }
+  .nav-links a {
+    margin: 0 1rem;
+    padding: 0.5rem 0;
+  }
+}
+.btn-black{
+  width:20%!important;
+  background: transparent;
+  text-transform: capitalize;
+  font-size: 0.8rem !important;
+  color: var(--mainDark);
+  border-radius: 0 !important;
+  border:0.1rem solid var(--mainDark)!important
+}
+.btn-black:hover{
+  background: var(--mainDark)!important;
+  color:var(--mainWhite)!important;
+}
+.cart-icon{
+  cursor:pointer;
+  font-size:1.2rem;
+  color:var(--mainYellow);
+
+}
+
+@media(max-width:768px){
+.nav-custom {
+  justify-content: flex-end !important;
+  flex-wrap: wrap !important;
+}
+.nav-item-m-80{
+  display: block;
+    width: 80%;
+    flex: 0 0 80%;
+    text-align:right;
+}
+}
