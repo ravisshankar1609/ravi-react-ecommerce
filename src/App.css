@@ -192,5 +192,7 @@ body{
 }
 }
 @media(max-width: 468px){
-
+	.rr{
+		background: red;
+	}
 }
